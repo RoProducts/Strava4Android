@@ -8,3 +8,7 @@ Feel free to contribute by adding other Strava API functionalities beyond the fi
 I was looking for something like that but found only <a href="https://github.com/dustedrob/JStrava">JStrava</a> which lacks the authentification part.
 
 So I made it myself and thought I'd share the code.
+
+Use mvn to resolve dependencies
+
+  mvn clean install

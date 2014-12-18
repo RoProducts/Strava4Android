@@ -11,4 +11,4 @@ So I made it myself and thought I'd share the code.
 
 Use mvn to resolve dependencies
 
-  mvn clean install
+    mvn clean install

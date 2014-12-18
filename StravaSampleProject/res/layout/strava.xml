@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff" >
+
+    <!-- Login progress -->
+
+    <LinearLayout
+        android:id="@+id/login_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/login_status_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/signing_in"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+    
+    <!-- Not logged in -->
+
+    <RelativeLayout
+        android:id="@+id/not_logged_in_form"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/loginWithStrava"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/loginwithstrava" />
+    </RelativeLayout>
+    
+    <!-- Logged in -->
+
+    <RelativeLayout
+        android:id="@+id/logged_in_form"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFC4C02"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <ImageView
+            android:id="@+id/athlete_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:minHeight="70dp"
+            android:minWidth="70dp"
+            android:src="@drawable/strava" />
+
+        <TextView
+            android:id="@+id/athlete_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/athlete_icon"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-light"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/athlete_place"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/athlete_name"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-light"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/athlete_distance"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/athlete_place"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif-light"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/logout_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bordered_button"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/log_out"
+            android:textColor="@android:color/black"
+            android:fontFamily="sans-serif-light"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</FrameLayout>

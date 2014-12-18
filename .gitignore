@@ -24,3 +24,10 @@ proguard/
 
 # Log Files
 *.log
+
+#maven
+/target
+
+#eclipse
+projects.properties
+.settings/

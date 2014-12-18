@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">StravaSampleProject</string>
+    
+    <string name="signing_in">Signing in &#8230;</string>
+    <string name="log_out">Log out</string>
+    <string name="login_error">Error Loggin in</string>
+    <string name="login_denied">You\'ve denied the login</string>
+    
+    <string name="invalid_credentials">You did not provide valid Strava credentials. Please get them from Strava to make this sample work.</string>
+
+</resources>
